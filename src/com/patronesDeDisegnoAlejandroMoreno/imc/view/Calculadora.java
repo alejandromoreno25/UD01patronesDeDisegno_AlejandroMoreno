@@ -26,19 +26,115 @@ public class Calculadora extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        tituloCalculadora = new javax.swing.JLabel();
+        lblPeso = new javax.swing.JLabel();
+        lblAltura = new javax.swing.JLabel();
+        txtPeso = new javax.swing.JTextField();
+        txtAltura = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
+        lblResultado = new javax.swing.JLabel();
+        lblClasificacion = new javax.swing.JLabel();
+
+        setBackground(new java.awt.Color(254, 254, 235));
+
+        tituloCalculadora.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
+        tituloCalculadora.setForeground(new java.awt.Color(153, 153, 0));
+        tituloCalculadora.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        tituloCalculadora.setText("CALCULADORA DE IMC");
+
+        lblPeso.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        lblPeso.setForeground(new java.awt.Color(153, 153, 0));
+        lblPeso.setText("Introduzca su Peso (kg):");
+
+        lblAltura.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        lblAltura.setForeground(new java.awt.Color(153, 153, 0));
+        lblAltura.setText("Introduzca su Altura (m) :");
+
+        txtPeso.setText("jTextField1");
+        txtPeso.addActionListener(this::txtPesoActionPerformed);
+
+        txtAltura.setText("jTextField1");
+
+        jButton1.setBackground(new java.awt.Color(255, 255, 204));
+        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(153, 153, 0));
+        jButton1.setText("Calcular");
+        jButton1.addActionListener(this::jButton1ActionPerformed);
+
+        lblResultado.setText("Resultado");
+
+        lblClasificacion.setText("Clasificación");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(122, 122, 122)
+                        .addComponent(tituloCalculadora))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(69, 69, 69)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(lblAltura)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtAltura))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(lblPeso)
+                                .addGap(18, 18, 18)
+                                .addComponent(txtPeso, javax.swing.GroupLayout.PREFERRED_SIZE, 319, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(lblResultado)
+                                    .addComponent(lblClasificacion))
+                                .addGap(58, 58, 58)))))
+                .addContainerGap(74, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(26, 26, 26)
+                .addComponent(tituloCalculadora)
+                .addGap(53, 53, 53)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblPeso)
+                    .addComponent(txtPeso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(36, 36, 36)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblAltura)
+                    .addComponent(txtAltura, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(36, 36, 36)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(lblResultado)
+                        .addGap(29, 29, 29)
+                        .addComponent(lblClasificacion))
+                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(41, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void txtPesoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPesoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPesoActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
+    private javax.swing.JLabel lblAltura;
+    private javax.swing.JLabel lblClasificacion;
+    private javax.swing.JLabel lblPeso;
+    private javax.swing.JLabel lblResultado;
+    private javax.swing.JLabel tituloCalculadora;
+    private javax.swing.JTextField txtAltura;
+    private javax.swing.JTextField txtPeso;
     // End of variables declaration//GEN-END:variables
 }
