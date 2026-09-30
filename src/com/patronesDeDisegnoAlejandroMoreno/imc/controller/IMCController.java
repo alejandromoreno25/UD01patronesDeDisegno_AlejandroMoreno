@@ -1,13 +1,20 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.patronesDeDisegnoAlejandroMoreno.imc.controller;
 
-/**
- *
- * @author DAM2
- */
+import com.patronesDeDisegnoAlejandroMoreno.imc.model.CalculadoraIMC;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
+//Implantamos Modelo
 public class IMCController {
-    
+
+    //Declaramos las variables de miembros que son las variables
+    //de la interfaz (apuntes hacer cuaderno)
+    private final JTextField txtPeso;
+    private final JTextField txtAltura;
+    private final JLabel lblResultado;
+    private final JLabel lblClasificacion;
+
+    private final CalculadoraIMC calculadora = new CalculadoraIMC();
+
 }
+
