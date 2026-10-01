@@ -15,6 +15,15 @@ public class IMCController {
     private final JLabel lblClasificacion;
 
     private final CalculadoraIMC calculadora = new CalculadoraIMC();
-
+    
+    public IMCController(JTextField txtPeso, JTextField txtAltura, 
+            JLabel lblResultado, JLabel lblClasificacion){
+        this.txtPeso = txtPeso;
+        this.txtAltura = txtAltura;
+        this.lblResultado = lblResultado;
+        this.lblClasificacion = lblClasificacion;
+    }//Inicializamos y creamos el constructor por defecto.
+    
+    
 }
 

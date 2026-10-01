@@ -4,6 +4,9 @@
  */
 package com.patronesDeDisegnoAlejandroMoreno.imc.view;
 
+import javax.swing.JButton;
+import javax.swing.JTextField;
+
 /**
  *
  * @author DAM2
@@ -16,6 +19,20 @@ public class Calculadora extends javax.swing.JPanel {
     public Calculadora() {
         initComponents();
     }
+    //REALIZAMOS LOS GETTERS PARA EL CONTROLADOR.
+    
+     public String getBoton() {
+        return boton.getText().trim();
+    }
+
+    public String getTxtAltura() {
+        return txtAltura.getText().trim();
+    }
+
+    public String getTxtPeso() {
+        return txtPeso.getText().trim();
+    }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -31,7 +48,7 @@ public class Calculadora extends javax.swing.JPanel {
         lblAltura = new javax.swing.JLabel();
         txtPeso = new javax.swing.JTextField();
         txtAltura = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        boton = new javax.swing.JButton();
         lblResultado = new javax.swing.JLabel();
         lblClasificacion = new javax.swing.JLabel();
 
@@ -55,11 +72,11 @@ public class Calculadora extends javax.swing.JPanel {
 
         txtAltura.setText("jTextField1");
 
-        jButton1.setBackground(new java.awt.Color(255, 255, 204));
-        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(153, 153, 0));
-        jButton1.setText("Calcular");
-        jButton1.addActionListener(this::jButton1ActionPerformed);
+        boton.setBackground(new java.awt.Color(255, 255, 204));
+        boton.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        boton.setForeground(new java.awt.Color(153, 153, 0));
+        boton.setText("Calcular");
+        boton.addActionListener(this::botonActionPerformed);
 
         lblResultado.setText("Resultado");
 
@@ -86,7 +103,7 @@ public class Calculadora extends javax.swing.JPanel {
                                 .addGap(18, 18, 18)
                                 .addComponent(txtPeso, javax.swing.GroupLayout.PREFERRED_SIZE, 319, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(boton, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(lblResultado)
@@ -113,7 +130,7 @@ public class Calculadora extends javax.swing.JPanel {
                         .addComponent(lblResultado)
                         .addGap(29, 29, 29)
                         .addComponent(lblClasificacion))
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(boton, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(41, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
@@ -122,13 +139,13 @@ public class Calculadora extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtPesoActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    private void botonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonActionPerformed
+       
+    }//GEN-LAST:event_botonActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton boton;
     private javax.swing.JLabel lblAltura;
     private javax.swing.JLabel lblClasificacion;
     private javax.swing.JLabel lblPeso;
