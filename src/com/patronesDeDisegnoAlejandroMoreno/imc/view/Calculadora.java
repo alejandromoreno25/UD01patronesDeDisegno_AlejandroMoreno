@@ -19,20 +19,27 @@ public class Calculadora extends javax.swing.JPanel {
     public Calculadora() {
         initComponents();
     }
+
     //REALIZAMOS LOS GETTERS PARA EL CONTROLADOR.
-    
-     public String getBoton() {
-        return boton.getText().trim();
+    public String getTxtPeso() {
+        return txtPeso.getText().trim();
     }
 
     public String getTxtAltura() {
         return txtAltura.getText().trim();
     }
 
-    public String getTxtPeso() {
-        return txtPeso.getText().trim();
+    public JButton getBtnCalcular() {
+        return boton;
     }
-    
+    // --- SETTERS ---
+    public void setResultado(String texto) {
+        lblResultado.setText(texto);
+    }
+
+    public void setClasificacion(String texto) {
+        lblClasificacion.setText(texto);
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -140,7 +147,7 @@ public class Calculadora extends javax.swing.JPanel {
     }//GEN-LAST:event_txtPesoActionPerformed
 
     private void botonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonActionPerformed
-       
+
     }//GEN-LAST:event_botonActionPerformed
 
 
