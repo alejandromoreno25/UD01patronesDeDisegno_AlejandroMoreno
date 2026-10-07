@@ -32,6 +32,7 @@ public class Calculadora extends javax.swing.JPanel {
     public JButton getBtnCalcular() {
         return boton;
     }
+
     // --- SETTERS ---
     public void setResultado(String texto) {
         lblResultado.setText(texto);
@@ -85,9 +86,12 @@ public class Calculadora extends javax.swing.JPanel {
         boton.setText("Calcular");
         boton.addActionListener(this::botonActionPerformed);
 
-        lblResultado.setText("Resultado");
+        lblResultado.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        lblResultado.setForeground(new java.awt.Color(153, 153, 0));
+        lblResultado.setText("Resultado:");
 
-        lblClasificacion.setText("Clasificación");
+        lblClasificacion.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        lblClasificacion.setText("Clasificación:");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -116,7 +120,7 @@ public class Calculadora extends javax.swing.JPanel {
                                     .addComponent(lblResultado)
                                     .addComponent(lblClasificacion))
                                 .addGap(58, 58, 58)))))
-                .addContainerGap(74, Short.MAX_VALUE))
+                .addContainerGap(94, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -138,7 +142,7 @@ public class Calculadora extends javax.swing.JPanel {
                         .addGap(29, 29, 29)
                         .addComponent(lblClasificacion))
                     .addComponent(boton, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(41, Short.MAX_VALUE))
+                .addContainerGap(23, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
