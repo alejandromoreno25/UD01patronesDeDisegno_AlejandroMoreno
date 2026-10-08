@@ -75,10 +75,10 @@ public class Calculadora extends javax.swing.JPanel {
         lblAltura.setForeground(new java.awt.Color(153, 153, 0));
         lblAltura.setText("Introduzca su Altura (m) :");
 
-        txtPeso.setText("jTextField1");
+        txtPeso.setText("Introduce Peso con \",\"");
         txtPeso.addActionListener(this::txtPesoActionPerformed);
 
-        txtAltura.setText("jTextField1");
+        txtAltura.setText("Introduce altura con \",\"");
 
         boton.setBackground(new java.awt.Color(255, 255, 204));
         boton.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N

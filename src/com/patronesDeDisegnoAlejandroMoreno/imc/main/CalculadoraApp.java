@@ -28,11 +28,11 @@ public class CalculadoraApp {
 
             IMCController controlador = new IMCController(vistaPanel);
 
-            //El JPanel no funciona por si mismo. Necesitamos un JFrame.
-            //Ya que no puede ser visible si no lo comvertimos.
+            //El JPanel no funciona por si mismo. Necesitamos un JFrame,
+            //ya que no puede ser visible si no lo comvertimos.
             JFrame ventana = new JFrame("Calculadora IMC");
             ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-            ventana.setContentPane(vistaPanel);
+            ventana.setContentPane(vistaPanel);//ponemos el contenido de la vista
             ventana.pack();
             ventana.setLocationRelativeTo(null);
             ventana.setVisible(true);

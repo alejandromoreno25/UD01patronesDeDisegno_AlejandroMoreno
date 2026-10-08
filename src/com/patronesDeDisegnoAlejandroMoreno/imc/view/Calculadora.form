@@ -122,7 +122,7 @@
     </Component>
     <Component class="javax.swing.JTextField" name="txtPeso">
       <Properties>
-        <Property name="text" type="java.lang.String" value="jTextField1"/>
+        <Property name="text" type="java.lang.String" value="Introduce Peso con &quot;,&quot;"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtPesoActionPerformed"/>
@@ -130,7 +130,7 @@
     </Component>
     <Component class="javax.swing.JTextField" name="txtAltura">
       <Properties>
-        <Property name="text" type="java.lang.String" value="jTextField1"/>
+        <Property name="text" type="java.lang.String" value="Introduce altura con &quot;,&quot;"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="boton">

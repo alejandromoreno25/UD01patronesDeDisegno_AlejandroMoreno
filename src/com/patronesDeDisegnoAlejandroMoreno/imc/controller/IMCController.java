@@ -27,6 +27,7 @@ public class IMCController implements ActionListener {
 
         double imc;
         String clasificacion;
+        
         try {
             //Pasamos los Strings a float para calcular.
             double altura = Double.parseDouble(textoaltura);
@@ -46,7 +47,7 @@ public class IMCController implements ActionListener {
             vista.setClasificacion("Clasificación: " + clasificacion);
 
         } catch (NumberFormatException nfe) {
-            System.out.println("Error: Datos Invalidos");
+            vista.setResultado("Error: Datos Invalidos");
             //Ahora pasamos al modelo tras configurar que se introduzca 
             //Un valor correcto.
         }
